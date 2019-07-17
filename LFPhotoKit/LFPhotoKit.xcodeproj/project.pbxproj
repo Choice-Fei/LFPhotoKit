@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8845C23622DEFD220072272D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C23522DEFD220072272D /* AppDelegate.m */; };
+		8845C23922DEFD220072272D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C23822DEFD220072272D /* ViewController.m */; };
+		8845C23C22DEFD220072272D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8845C23A22DEFD220072272D /* Main.storyboard */; };
+		8845C23E22DEFD230072272D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8845C23D22DEFD230072272D /* Assets.xcassets */; };
+		8845C24122DEFD230072272D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8845C23F22DEFD230072272D /* LaunchScreen.storyboard */; };
+		8845C24422DEFD230072272D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C24322DEFD230072272D /* main.m */; };
+		8845C24E22DEFD240072272D /* LFPhotoKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C24D22DEFD240072272D /* LFPhotoKitTests.m */; };
+		8845C25922DEFD240072272D /* LFPhotoKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C25822DEFD240072272D /* LFPhotoKitUITests.m */; };
+		8845C26B22DEFDF50072272D /* LFPhotoKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C26A22DEFDF50072272D /* LFPhotoKitViewController.m */; };
+		8845C27022DEFE220072272D /* UIView+LFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C26D22DEFE220072272D /* UIView+LFExtension.m */; };
+		8845C27122DEFE220072272D /* UIImage+ALi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C26E22DEFE220072272D /* UIImage+ALi.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8845C24A22DEFD240072272D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8845C22922DEFD220072272D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8845C23022DEFD220072272D;
+			remoteInfo = LFPhotoKit;
+		};
+		8845C25522DEFD240072272D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8845C22922DEFD220072272D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8845C23022DEFD220072272D;
+			remoteInfo = LFPhotoKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8845C23122DEFD220072272D /* LFPhotoKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LFPhotoKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8845C23422DEFD220072272D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8845C23522DEFD220072272D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8845C23722DEFD220072272D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8845C23822DEFD220072272D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8845C23B22DEFD220072272D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8845C23D22DEFD230072272D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8845C24022DEFD230072272D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8845C24222DEFD230072272D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8845C24322DEFD230072272D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8845C24922DEFD240072272D /* LFPhotoKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFPhotoKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8845C24D22DEFD240072272D /* LFPhotoKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFPhotoKitTests.m; sourceTree = "<group>"; };
+		8845C24F22DEFD240072272D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8845C25422DEFD240072272D /* LFPhotoKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LFPhotoKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8845C25822DEFD240072272D /* LFPhotoKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFPhotoKitUITests.m; sourceTree = "<group>"; };
+		8845C25A22DEFD240072272D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8845C26922DEFDF50072272D /* LFPhotoKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFPhotoKitViewController.h; sourceTree = "<group>"; };
+		8845C26A22DEFDF50072272D /* LFPhotoKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFPhotoKitViewController.m; sourceTree = "<group>"; };
+		8845C26C22DEFE220072272D /* UIImage+ALi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ALi.h"; sourceTree = "<group>"; };
+		8845C26D22DEFE220072272D /* UIView+LFExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LFExtension.m"; sourceTree = "<group>"; };
+		8845C26E22DEFE220072272D /* UIImage+ALi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ALi.m"; sourceTree = "<group>"; };
+		8845C26F22DEFE220072272D /* UIView+LFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LFExtension.h"; sourceTree = "<group>"; };
+		8845C27322DEFF340072272D /* LFPhotoConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFPhotoConfig.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8845C22E22DEFD220072272D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8845C24622DEFD240072272D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8845C25122DEFD240072272D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8845C22822DEFD220072272D = {
+			isa = PBXGroup;
+			children = (
+				8845C23322DEFD220072272D /* LFPhotoKit */,
+				8845C24C22DEFD240072272D /* LFPhotoKitTests */,
+				8845C25722DEFD240072272D /* LFPhotoKitUITests */,
+				8845C23222DEFD220072272D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8845C23222DEFD220072272D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8845C23122DEFD220072272D /* LFPhotoKit.app */,
+				8845C24922DEFD240072272D /* LFPhotoKitTests.xctest */,
+				8845C25422DEFD240072272D /* LFPhotoKitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8845C23322DEFD220072272D /* LFPhotoKit */ = {
+			isa = PBXGroup;
+			children = (
+				8845C26622DEFDD10072272D /* LFPhotoKit */,
+				8845C23422DEFD220072272D /* AppDelegate.h */,
+				8845C23522DEFD220072272D /* AppDelegate.m */,
+				8845C23722DEFD220072272D /* ViewController.h */,
+				8845C23822DEFD220072272D /* ViewController.m */,
+				8845C23A22DEFD220072272D /* Main.storyboard */,
+				8845C23D22DEFD230072272D /* Assets.xcassets */,
+				8845C23F22DEFD230072272D /* LaunchScreen.storyboard */,
+				8845C24222DEFD230072272D /* Info.plist */,
+				8845C24322DEFD230072272D /* main.m */,
+			);
+			path = LFPhotoKit;
+			sourceTree = "<group>";
+		};
+		8845C24C22DEFD240072272D /* LFPhotoKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				8845C24D22DEFD240072272D /* LFPhotoKitTests.m */,
+				8845C24F22DEFD240072272D /* Info.plist */,
+			);
+			path = LFPhotoKitTests;
+			sourceTree = "<group>";
+		};
+		8845C25722DEFD240072272D /* LFPhotoKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8845C25822DEFD240072272D /* LFPhotoKitUITests.m */,
+				8845C25A22DEFD240072272D /* Info.plist */,
+			);
+			path = LFPhotoKitUITests;
+			sourceTree = "<group>";
+		};
+		8845C26622DEFDD10072272D /* LFPhotoKit */ = {
+			isa = PBXGroup;
+			children = (
+				8845C26722DEFDD10072272D /* LFPhotoConfig */,
+				8845C26822DEFDD10072272D /* LFPhotoLib */,
+			);
+			path = LFPhotoKit;
+			sourceTree = "<group>";
+		};
+		8845C26722DEFDD10072272D /* LFPhotoConfig */ = {
+			isa = PBXGroup;
+			children = (
+				8845C27322DEFF340072272D /* LFPhotoConfig.h */,
+				8845C26C22DEFE220072272D /* UIImage+ALi.h */,
+				8845C26E22DEFE220072272D /* UIImage+ALi.m */,
+				8845C26F22DEFE220072272D /* UIView+LFExtension.h */,
+				8845C26D22DEFE220072272D /* UIView+LFExtension.m */,
+			);
+			path = LFPhotoConfig;
+			sourceTree = "<group>";
+		};
+		8845C26822DEFDD10072272D /* LFPhotoLib */ = {
+			isa = PBXGroup;
+			children = (
+				8845C26922DEFDF50072272D /* LFPhotoKitViewController.h */,
+				8845C26A22DEFDF50072272D /* LFPhotoKitViewController.m */,
+			);
+			path = LFPhotoLib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8845C23022DEFD220072272D /* LFPhotoKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8845C25D22DEFD240072272D /* Build configuration list for PBXNativeTarget "LFPhotoKit" */;
+			buildPhases = (
+				8845C22D22DEFD220072272D /* Sources */,
+				8845C22E22DEFD220072272D /* Frameworks */,
+				8845C22F22DEFD220072272D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LFPhotoKit;
+			productName = LFPhotoKit;
+			productReference = 8845C23122DEFD220072272D /* LFPhotoKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8845C24822DEFD240072272D /* LFPhotoKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8845C26022DEFD240072272D /* Build configuration list for PBXNativeTarget "LFPhotoKitTests" */;
+			buildPhases = (
+				8845C24522DEFD240072272D /* Sources */,
+				8845C24622DEFD240072272D /* Frameworks */,
+				8845C24722DEFD240072272D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8845C24B22DEFD240072272D /* PBXTargetDependency */,
+			);
+			name = LFPhotoKitTests;
+			productName = LFPhotoKitTests;
+			productReference = 8845C24922DEFD240072272D /* LFPhotoKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8845C25322DEFD240072272D /* LFPhotoKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8845C26322DEFD240072272D /* Build configuration list for PBXNativeTarget "LFPhotoKitUITests" */;
+			buildPhases = (
+				8845C25022DEFD240072272D /* Sources */,
+				8845C25122DEFD240072272D /* Frameworks */,
+				8845C25222DEFD240072272D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8845C25622DEFD240072272D /* PBXTargetDependency */,
+			);
+			name = LFPhotoKitUITests;
+			productName = LFPhotoKitUITests;
+			productReference = 8845C25422DEFD240072272D /* LFPhotoKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8845C22922DEFD220072272D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = liufei;
+				TargetAttributes = {
+					8845C23022DEFD220072272D = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					8845C24822DEFD240072272D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 8845C23022DEFD220072272D;
+					};
+					8845C25322DEFD240072272D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 8845C23022DEFD220072272D;
+					};
+				};
+			};
+			buildConfigurationList = 8845C22C22DEFD220072272D /* Build configuration list for PBXProject "LFPhotoKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8845C22822DEFD220072272D;
+			productRefGroup = 8845C23222DEFD220072272D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8845C23022DEFD220072272D /* LFPhotoKit */,
+				8845C24822DEFD240072272D /* LFPhotoKitTests */,
+				8845C25322DEFD240072272D /* LFPhotoKitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8845C22F22DEFD220072272D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8845C24122DEFD230072272D /* LaunchScreen.storyboard in Resources */,
+				8845C23E22DEFD230072272D /* Assets.xcassets in Resources */,
+				8845C23C22DEFD220072272D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8845C24722DEFD240072272D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8845C25222DEFD240072272D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8845C22D22DEFD220072272D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8845C27122DEFE220072272D /* UIImage+ALi.m in Sources */,
+				8845C26B22DEFDF50072272D /* LFPhotoKitViewController.m in Sources */,
+				8845C23922DEFD220072272D /* ViewController.m in Sources */,
+				8845C27022DEFE220072272D /* UIView+LFExtension.m in Sources */,
+				8845C24422DEFD230072272D /* main.m in Sources */,
+				8845C23622DEFD220072272D /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8845C24522DEFD240072272D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8845C24E22DEFD240072272D /* LFPhotoKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8845C25022DEFD240072272D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8845C25922DEFD240072272D /* LFPhotoKitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8845C24B22DEFD240072272D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8845C23022DEFD220072272D /* LFPhotoKit */;
+			targetProxy = 8845C24A22DEFD240072272D /* PBXContainerItemProxy */;
+		};
+		8845C25622DEFD240072272D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8845C23022DEFD220072272D /* LFPhotoKit */;
+			targetProxy = 8845C25522DEFD240072272D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8845C23A22DEFD220072272D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8845C23B22DEFD220072272D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8845C23F22DEFD230072272D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8845C24022DEFD230072272D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8845C25B22DEFD240072272D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8845C25C22DEFD240072272D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8845C25E22DEFD240072272D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LFPhotoKit.com.LFPhotoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8845C25F22DEFD240072272D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LFPhotoKit.com.LFPhotoKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8845C26122DEFD240072272D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LFPhotoKit.com.LFPhotoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LFPhotoKit.app/LFPhotoKit";
+			};
+			name = Debug;
+		};
+		8845C26222DEFD240072272D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LFPhotoKit.com.LFPhotoKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LFPhotoKit.app/LFPhotoKit";
+			};
+			name = Release;
+		};
+		8845C26422DEFD240072272D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LFPhotoKit.com.LFPhotoKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LFPhotoKit;
+			};
+			name = Debug;
+		};
+		8845C26522DEFD240072272D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LFPhotoKitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LFPhotoKit.com.LFPhotoKitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LFPhotoKit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8845C22C22DEFD220072272D /* Build configuration list for PBXProject "LFPhotoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8845C25B22DEFD240072272D /* Debug */,
+				8845C25C22DEFD240072272D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8845C25D22DEFD240072272D /* Build configuration list for PBXNativeTarget "LFPhotoKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8845C25E22DEFD240072272D /* Debug */,
+				8845C25F22DEFD240072272D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8845C26022DEFD240072272D /* Build configuration list for PBXNativeTarget "LFPhotoKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8845C26122DEFD240072272D /* Debug */,
+				8845C26222DEFD240072272D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8845C26322DEFD240072272D /* Build configuration list for PBXNativeTarget "LFPhotoKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8845C26422DEFD240072272D /* Debug */,
+				8845C26522DEFD240072272D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8845C22922DEFD220072272D /* Project object */;
+}
