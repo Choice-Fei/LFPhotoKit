@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LFPhotoKit/LFPhotoConfig/LFPhotoConfig.h"
 #import "LFPhotoKit/LFPhotoLib/LFPhotoKitViewController.h"
+#import <Photos/Photos.h>
 @interface ViewController ()<LFPhotoKitViewControllerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     UIImageView *tempImage;
@@ -23,6 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (void)configUI {
+
     UIButton *reloadButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
     reloadButton.center = CGPointMake(self.view.center.x,125);
     [reloadButton addTarget:self action:@selector(handleImage:)

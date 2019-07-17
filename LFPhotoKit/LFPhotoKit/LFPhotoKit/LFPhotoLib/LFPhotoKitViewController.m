@@ -176,14 +176,16 @@
 
     [cancelButton addTarget:self action:@selector(handleClose:) forControlEvents:UIControlEventTouchUpInside];
     [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[cancelButton(80)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(cancelButton)]];
-    [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[cancelButton(40)]-48-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(cancelButton)]];
+    [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[cancelButton(30)]-60-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(cancelButton)]];
     UIButton *doneButton = [self createActionBtnWithTitle:@"确定"];
     doneButton.translatesAutoresizingMaskIntoConstraints = NO;
     [doneButton addTarget:self action:@selector(handleSave:) forControlEvents:UIControlEventTouchUpInside];
     [bottomBackView addSubview:doneButton];
     [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[doneButton(80)]-30-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(doneButton)]];
-    [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[doneButton(40)]-48-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(doneButton)]];
-   
+    [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[doneButton(30)]-60-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(doneButton)]];
+    if (self.sourceType == LFPhotoKitSourceTypeVideo) {
+        [self.view bringSubviewToFront:self.tempImageView];
+    }
 }
 - (UIButton *)createActionBtnWithTitle:(NSString *)title {
     UIButton *sender = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -211,8 +213,10 @@
     self.generator.requestedTimeToleranceBefore = kCMTimeZero;
     CMTime requestTime = CMTimeMakeWithSeconds(videoSecond, self.videoAsset.duration.timescale);
     CMTime actualTime;
-    CGImageRef image = [self.generator copyCGImageAtTime:requestTime actualTime:&actualTime error:nil];
-    return [UIImage imageWithCGImage:image];
+    CGImageRef imageRef = [self.generator copyCGImageAtTime:requestTime actualTime:&actualTime error:nil];
+    UIImage *image = [UIImage imageWithCGImage:imageRef];
+    CGImageRelease(imageRef);
+    return image;
 }
 #pragma mark - lazy
 - (UIScrollView *)backContentView {
@@ -261,6 +265,9 @@
         
     }
     return _tempImageView;
+}
+- (void)dealloc {
+    NSLog(@"xiao");
 }
 /*
 #pragma mark - Navigation
