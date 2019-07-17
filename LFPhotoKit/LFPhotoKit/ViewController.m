@@ -19,13 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *reloadButton = [[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 50)];
-    [reloadButton addTarget:self action:@selector(handleImage:) forControlEvents:UIControlEventTouchUpInside];
+    [self configUI];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+- (void)configUI {
+    UIButton *reloadButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 50)];
+    reloadButton.center = CGPointMake(self.view.center.x,125);
+    [reloadButton addTarget:self action:@selector(handleImage:)
+           forControlEvents:UIControlEventTouchUpInside];
+    [reloadButton setTitle:@"选取图片" forState:UIControlStateNormal];
     reloadButton.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:reloadButton];
     tempImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 220,kScreenWidth, kScreenWidth)];
+    tempImage.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:tempImage];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)handleImage:(UIButton *)sender {
@@ -42,15 +49,7 @@
     tempImage.image = coverImage;
 
 }
-
-
-- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo
-{
-    
-    NSLog(@"image = %@, error = %@, contextInfo = %@", image, error, contextInfo);
-}
-
-
+#pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     [picker dismissViewControllerAnimated:NO completion:^{
         LFPhotoKitViewController *photoKitVC = [[LFPhotoKitViewController alloc] init];

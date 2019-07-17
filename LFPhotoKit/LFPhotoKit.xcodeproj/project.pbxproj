@@ -18,6 +18,8 @@
 		8845C26B22DEFDF50072272D /* LFPhotoKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C26A22DEFDF50072272D /* LFPhotoKitViewController.m */; };
 		8845C27022DEFE220072272D /* UIView+LFExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C26D22DEFE220072272D /* UIView+LFExtension.m */; };
 		8845C27122DEFE220072272D /* UIImage+ALi.m in Sources */ = {isa = PBXBuildFile; fileRef = 8845C26E22DEFE220072272D /* UIImage+ALi.m */; };
+		887D325022DF190A0016CC9E /* LFPhoto.gif in Resources */ = {isa = PBXBuildFile; fileRef = 887D324E22DF190A0016CC9E /* LFPhoto.gif */; };
+		887D325122DF190A0016CC9E /* LFPhoto1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 887D324F22DF190A0016CC9E /* LFPhoto1.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		8845C26E22DEFE220072272D /* UIImage+ALi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ALi.m"; sourceTree = "<group>"; };
 		8845C26F22DEFE220072272D /* UIView+LFExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LFExtension.h"; sourceTree = "<group>"; };
 		8845C27322DEFF340072272D /* LFPhotoConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFPhotoConfig.h; sourceTree = "<group>"; };
+		887D324E22DF190A0016CC9E /* LFPhoto.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LFPhoto.gif; sourceTree = "<group>"; };
+		887D324F22DF190A0016CC9E /* LFPhoto1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = LFPhoto1.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		8845C23322DEFD220072272D /* LFPhotoKit */ = {
 			isa = PBXGroup;
 			children = (
+				887D324D22DF190A0016CC9E /* LICEPicture */,
 				8845C26622DEFDD10072272D /* LFPhotoKit */,
 				8845C23422DEFD220072272D /* AppDelegate.h */,
 				8845C23522DEFD220072272D /* AppDelegate.m */,
@@ -171,6 +176,15 @@
 				8845C26A22DEFDF50072272D /* LFPhotoKitViewController.m */,
 			);
 			path = LFPhotoLib;
+			sourceTree = "<group>";
+		};
+		887D324D22DF190A0016CC9E /* LICEPicture */ = {
+			isa = PBXGroup;
+			children = (
+				887D324E22DF190A0016CC9E /* LFPhoto.gif */,
+				887D324F22DF190A0016CC9E /* LFPhoto1.gif */,
+			);
+			path = LICEPicture;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +292,9 @@
 			files = (
 				8845C24122DEFD230072272D /* LaunchScreen.storyboard in Resources */,
 				8845C23E22DEFD230072272D /* Assets.xcassets in Resources */,
+				887D325122DF190A0016CC9E /* LFPhoto1.gif in Resources */,
 				8845C23C22DEFD220072272D /* Main.storyboard in Resources */,
+				887D325022DF190A0016CC9E /* LFPhoto.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
