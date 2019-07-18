@@ -22,4 +22,10 @@
 #define k_CoverMargin (kScreenHeight - kScreenWidth )/ 2
 
 #define CustomColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
+#ifdef DEBUG
+# define LFLog(format, ...) NSLog((@"[文件名:%s]" "[函数名:%s]" "[行号:%d]" format), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define LFLog(...);
+#endif
 #endif /* LFPhotoConfig_h */

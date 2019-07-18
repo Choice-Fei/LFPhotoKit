@@ -47,14 +47,22 @@
 }
 - (void)configUI {
     if (self.sourceType == LFPhotoKitSourceTypeImage) {
-        oldImageSize = self.originImage.size;
+        if (self.originImage) {
+            oldImageSize = self.originImage.size;
+        } else {
+            LFLog(@"请传入有效图片");
+        }
     } else if (self.sourceType == LFPhotoKitSourceTypeVideo) {
-        self.videoAsset = [[AVURLAsset alloc] initWithURL:self.videoUrl options:nil];
-        self.generator = [[AVAssetImageGenerator alloc] initWithAsset:_videoAsset];
-        videoDuration = _videoAsset.duration;
-        totalSecond = CMTimeGetSeconds(videoDuration);
-        self.originImage = [self getImageWithSecond:0.f];
-        oldImageSize = self.originImage.size;
+        if (self.videoUrl) {
+            self.videoAsset = [[AVURLAsset alloc] initWithURL:self.videoUrl options:nil];
+            self.generator = [[AVAssetImageGenerator alloc] initWithAsset:_videoAsset];
+            videoDuration = _videoAsset.duration;
+            totalSecond = CMTimeGetSeconds(videoDuration);
+            self.originImage = [self getImageWithSecond:0.f];
+            oldImageSize = self.originImage.size;
+        } else {
+            LFLog(@"请传入有效视频地址");
+        }
     } else {
         oldImageSize = CGSizeMake(0, 0);        
     }
@@ -173,7 +181,7 @@
     UIButton *cancelButton = [self createActionBtnWithTitle:@"取消"];
     cancelButton.translatesAutoresizingMaskIntoConstraints = NO;
     [bottomBackView addSubview:cancelButton];
-    NSDictionary *metic = @{@"padding":@(kStatusBarH + 60)};
+    NSDictionary *metic = @{@"padding":@(kStatusTabbarH + 60)};
     [cancelButton addTarget:self action:@selector(handleClose:) forControlEvents:UIControlEventTouchUpInside];
     [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[cancelButton(80)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(cancelButton)]];
     [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[cancelButton(30)]-padding-|" options:0 metrics:metic views:NSDictionaryOfVariableBindings(cancelButton)]];
