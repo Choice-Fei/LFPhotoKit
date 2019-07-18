@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "LFPhotoKit/LFPhotoConfig/LFPhotoConfig.h"
 #import "LFPhotoKit/LFPhotoLib/LFPhotoKitViewController.h"
-#import <Photos/Photos.h>
 @interface ViewController ()<LFPhotoKitViewControllerDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 {
     UIImageView *tempImage;

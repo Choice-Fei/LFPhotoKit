@@ -102,11 +102,11 @@
     //2,改变视图的位置. 仿射变换(让视图上得每个点发生变化).
     if (gesture.state == UIGestureRecognizerStateChanged) {
         if (localPoint.x < 24) {
-            gesture.view.center = CGPointMake(24,kScreenHeight - 24);
+            gesture.view.center = CGPointMake(24,gesture.view.center.y);
         } else if (localPoint.x> kScreenWidth - 24) {
-            gesture.view.center = CGPointMake(kScreenWidth - 24, kScreenHeight - 24);
+            gesture.view.center = CGPointMake(kScreenWidth - 24, gesture.view.center.y);
         } else {
-            gesture.view.center = CGPointMake([gesture locationInView:nil].x, kScreenHeight - 24);
+            gesture.view.center = CGPointMake([gesture locationInView:nil].x,gesture.view.center.y);
             [self changeTempImage];
             
         }
@@ -173,16 +173,16 @@
     UIButton *cancelButton = [self createActionBtnWithTitle:@"取消"];
     cancelButton.translatesAutoresizingMaskIntoConstraints = NO;
     [bottomBackView addSubview:cancelButton];
-
+    NSDictionary *metic = @{@"padding":@(kStatusBarH + 60)};
     [cancelButton addTarget:self action:@selector(handleClose:) forControlEvents:UIControlEventTouchUpInside];
     [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-30-[cancelButton(80)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(cancelButton)]];
-    [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[cancelButton(30)]-60-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(cancelButton)]];
+    [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[cancelButton(30)]-padding-|" options:0 metrics:metic views:NSDictionaryOfVariableBindings(cancelButton)]];
     UIButton *doneButton = [self createActionBtnWithTitle:@"确定"];
     doneButton.translatesAutoresizingMaskIntoConstraints = NO;
     [doneButton addTarget:self action:@selector(handleSave:) forControlEvents:UIControlEventTouchUpInside];
     [bottomBackView addSubview:doneButton];
     [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[doneButton(80)]-30-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(doneButton)]];
-    [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[doneButton(30)]-60-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(doneButton)]];
+    [bottomBackView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[doneButton(30)]-padding-|" options:0 metrics:metic views:NSDictionaryOfVariableBindings(doneButton)]];
     if (self.sourceType == LFPhotoKitSourceTypeVideo) {
         [self.view bringSubviewToFront:self.tempImageView];
     }
@@ -200,7 +200,7 @@
 }
 - (void)setUpVideoCoverBottomView {
     for ( int i  = 0; i < 9 ; i++) {
-        UIImageView *coverPreView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth * i / 9, kScreenHeight - 45, kScreenWidth / 9, 42)];
+        UIImageView *coverPreView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth * i / 9, kScreenHeight - 45 - kStatusTabbarH, kScreenWidth / 9, 42)];
         coverPreView.contentMode = UIViewContentModeScaleAspectFill;
         coverPreView.clipsToBounds = YES;
         coverPreView.image = [self getImageWithSecond:i * totalSecond / 9];
@@ -254,7 +254,7 @@
 }
 - (UIImageView *)tempImageView {
     if (!_tempImageView) {
-        _tempImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 48, 48, 48)];
+        _tempImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, kScreenHeight - 48 - kStatusTabbarH, 48, 48)];
         _tempImageView.layer.borderWidth = 3.f;
         _tempImageView.layer.borderColor = CustomColor(255, 201, 98, 1).CGColor;
         _tempImageView.contentMode = UIViewContentModeScaleAspectFill;

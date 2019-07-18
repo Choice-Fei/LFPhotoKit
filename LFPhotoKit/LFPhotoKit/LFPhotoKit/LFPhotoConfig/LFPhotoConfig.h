@@ -11,6 +11,10 @@
 #import "UIImage+ALi.h"
 #import "UIView+LFExtension.h"
 
+#define kStatusBarH ([UIApplication sharedApplication].statusBarFrame.size.height)//(44/20)
+
+#define kStatusTabbarH  ((kStatusBarH == 44.0) ? 34.0 : 0.0)
+
 #define kScreenWidth [UIScreen mainScreen].bounds.size.width
 
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
